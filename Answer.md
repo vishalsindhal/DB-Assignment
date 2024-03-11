@@ -1,0 +1,4 @@
+1) Each product belongs to one category, but each category can have multiple products. This relationship is established through the category_id foreign key in the "Product" table, which references the id primary key in the "Product_Category" table.
+
+2) How could you ensure that each product in the "Product" table has a valid category assigned to it?
+-> To ensure that each product in the "Product" table has a valid category assigned to it, we can use a foreign key constraint. The foreign key constraint on the 'category_id' column in the "Product" table ensures that the value in this column must exist in the 'id' column of the "Product_Category" table. This ensures referential integrity, meaning that a product cannot be assigned to a non-existent category.
